@@ -5,8 +5,10 @@ import java.util.Scanner;
 /**
  * Created by admin on 2/4/2018.
  */
+//Имя класса с большой буквы должно быть
 public class homeTask1_1 {
     public static void main(String[] args) {
+        //можно вызывать методы без имени класса
         homeTask1_1.theLong();
         homeTask1_1.theInt();
         homeTask1_1.theFloat();
