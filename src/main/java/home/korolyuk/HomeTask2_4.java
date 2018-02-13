@@ -5,7 +5,7 @@ package home.korolyuk;
  */
 public class HomeTask2_4 {
     public static void main(String[] args) {
-        if (degreeOfTwo(64)) {
+        if (degreeOfTwo(58)) {
             System.out.print("Число является степенью двойки");
         } else {System.out.print("Число не является степенью двойки");}
     }
