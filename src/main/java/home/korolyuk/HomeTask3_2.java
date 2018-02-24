@@ -11,6 +11,10 @@ public class HomeTask3_2 {
     public static StringBuilder strsb = new StringBuilder();
     public static Scanner scan = new Scanner(System.in);
 
+    /**
+    Решение принимается но оно не оптимальное 
+    много циклов, можно решить в одном цикле )
+    **/
     public static void symbolCounter(){
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
@@ -30,6 +34,9 @@ public class HomeTask3_2 {
 
     public static void main(String[] args) {
         System.out.println("Введите строку");
+        //не очень хорошая идея, передавать строку через статическую переменную
+        //лучше как параметр статического метода передать
+        //symbolCounter(String str)
         str = scan.nextLine();
         symbolCounter();
     }
