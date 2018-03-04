@@ -11,9 +11,13 @@ public class HomeTask3_1 {
         final String patE = "E. Как в предложении(с заглавной буквы).";
         final String patF = "F. выход из прораммы";
 
+        String initialStr = "Пример строки, которую ввел пользователь";
+
         Scanner scan = new Scanner(System.in);
 
-        String initialStr = "Пример строки, которую ввел пользователь";
+        System.out.println("Введите строку");
+
+        initialStr = scan.nextLine();
 
         System.out.printf("Выберите шаблон: %n %s%n %s%n %s%n %s%n %s%n %s%n", patA, patB, patC, patD, patE, patF);
 
@@ -31,7 +35,7 @@ public class HomeTask3_1 {
                 String [] strArr = initialStr.split(" ");
                 for(int i = 0; i < strArr.length; i++) {
                     String subStr = strArr[i].substring(0,1);
-                    strArr[i] = strArr[i].replace(subStr, subStr.toUpperCase());
+                    strArr[i] = strArr[i].replaceFirst(subStr, subStr.toUpperCase());
                 }
                 for (String str: strArr) {
                     System.out.print(str + " ");
@@ -42,7 +46,7 @@ public class HomeTask3_1 {
                 String [] strArr1 = initialStr.split(" ");
                 for(int i = 0; i < strArr1.length; i++) {
                     String subStr = strArr1[i].substring(0,1);
-                    strArr1[i] = strArr1[i].replace(subStr, subStr.toLowerCase());
+                    strArr1[i] = strArr1[i].replaceFirst(subStr, subStr.toLowerCase());
                 }
                 for (String str: strArr1) {
                     System.out.print(str + " ");
